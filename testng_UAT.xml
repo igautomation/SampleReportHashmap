@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Project_TDRA" parallel = "classes" thread-count = "2">
+	<test verbose="2" preserve-order="true" name="TDRA_Batch_Execution">
+		<parameter name="Test_Data_Path" value="C:\TDRA\src\main\resources\TDRA_UDP_UAT.xlsx" />
+		<parameter name="Environment" value="UAT1" />
+		<classes>
+			<class name="utilities.Reports"/>
+			<class name="test_POC.TC_TDRA_UDP_001"/>
+			</classes>
+	</test>
+</suite>
